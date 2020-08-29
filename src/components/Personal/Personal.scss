@@ -1,0 +1,12 @@
+.personal {
+    .alertDialog__group {
+        .MuiButtonBase-root {
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .personalGroup {
+        display: flex;
+    }
+}

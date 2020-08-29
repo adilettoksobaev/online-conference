@@ -1,0 +1,41 @@
+.addStaffModal {
+    color: #333333;
+    .MuiPaper-root {
+        max-width: 677px;
+        box-sizing: border-box;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        margin-bottom: 32px;
+    }
+    .addStaffModal__content {
+        padding: 40px 40px 20px;
+    }
+    &__form {
+        .MuiFormControl-root {
+            margin-bottom: 28px;
+        }
+    }
+    &__subTitle {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 24px;
+    }
+    &__h3 {
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .addStaffModalLink {
+        color: #2290E0;
+        margin-bottom: 20px;
+        margin-left: -6px;
+        text-transform: none;
+    }
+}
+
+.addNewPosition {
+    .MuiButton-root {
+        text-transform: none;
+    }
+}

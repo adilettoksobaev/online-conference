@@ -1,0 +1,120 @@
+.conferenceBox {
+    background: #FFFFFF;
+    border-radius: 4px;
+    padding: 10px 0 8px;
+    min-width: 306px;
+    max-width: 306px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 12px;
+    min-height: 148px;
+    cursor: pointer;
+    color: #333333;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.1);
+    position: relative;
+    &__edit {
+        color: #2290E0;
+        cursor: pointer;
+        position: absolute;
+        z-index: 999;
+        right: 15px;
+        top: 18px;
+        transition: all .3s ease;
+        opacity: 0;
+    }
+    &:hover {
+        .conferenceBox__title {
+            background: #DEEEFA;
+            border-color: #258FE5;
+        }
+        .conferenceBox__edit {
+            transition: all .3s ease;
+            opacity: 1;
+        }
+    }
+    &__title {
+        font-weight: 600;
+        margin-bottom: 12px;
+        font-size: 14px;
+        min-height: 46px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 16px;
+        padding-right: 16px;
+        box-sizing: border-box;
+        transition: all .3s ease;
+        border-left: 2px solid transparent;
+        position: relative;
+    }
+    &__info {
+        display: flex;
+        position: relative;
+        padding-bottom: 11px;
+        padding-left: 16px;
+        padding-right: 16px;
+        &::after {
+            content: '';
+            border: 0.5px solid #DADADA;
+            position: absolute;
+            width: calc(100% - 16px);
+            left: 16px;
+            bottom: 0;
+            right: 0;
+        }
+    }
+    &__position {
+        color: #757575;
+    }
+    .conferenceBox__avatar {
+        width: 32px;
+        height: 32px;
+        margin-right: 12px;
+    }
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .bottomItem {
+        display: flex;
+        align-items: center;
+        .icon {
+            height: 13px;
+            margin-right: 3px;
+        }
+    }
+}
+
+.MuiButtonGroup-root.conferenceTab {
+    height: 36px;
+    border: 0.5px solid #DADADA;
+    border-radius: 2px;
+    box-sizing: border-box;
+    overflow: hidden;
+    .MuiButtonBase-root {
+        border: none;
+        text-transform: none;
+        font-size: 14px;
+        color: #333333;
+        &.active {
+            background: #DEEEFA;
+            font-weight: 600;
+        }
+    }
+}
+.dateTitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 16px;
+}
+a.conferenceLink {
+    text-decoration: none;
+    color: #333;
+    &:hover {
+        text-decoration: none;
+    }
+}

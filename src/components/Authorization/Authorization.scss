@@ -1,0 +1,70 @@
+.authorization {
+    font-family: 'Rubik', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(231.83deg, #03BEB5 0.44%, #08A7FF 59.97%, #678CFF 101.93%);
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .MuiInputBase-input {
+        font-family: 'Open Sans', sans-serif;
+    }
+    &__content {
+        max-width: 414px;
+        width: 100%;
+        background-color: #fff;
+        box-sizing: border-box;
+        border-radius: 16px;
+        padding: 16px 45px 24px;
+    }
+    &__text {
+        font-family: "AristaProTrial";
+        font-size: 16px;
+        color: #375A9C;
+        margin-bottom: 32px;
+    }
+    &__title {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        color: #000;
+        text-align: center;
+        margin-bottom: 28px;
+    }
+    .phoneContent {
+        .MuiInputLabel-shrink {
+            transform: translate(0, -2px) scale(1);
+            right: 0;
+            text-align: center;
+            font-size: 13px;
+            color: rgba(0, 0, 0, 0.54);
+        }
+        .MuiInputBase-input {
+            text-align: center;
+        }
+        .phoneContent__btn {
+            margin: auto;
+            text-align: center;
+            margin-top: 15px;
+        }
+        .MuiFormHelperText-root {
+            text-align: center;
+            left: 0;
+            right: 0;
+        }
+        .MuiFormControl-root {
+            margin-bottom: 20px;
+        }
+    }
+    &__form {
+        max-width: 206px;
+        margin: auto;
+    }
+}

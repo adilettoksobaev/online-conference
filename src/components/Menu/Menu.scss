@@ -1,0 +1,41 @@
+.menuDrawer {
+    .MuiPaper-root {
+        top: 56px;
+        background: #0A1729;
+        max-width: 200px;
+        width: 100%;
+        border: none;
+        box-sizing: border-box;
+        color: #fff;
+    }
+    .MuiListItemIcon-root {
+        margin-right: 16px;
+        min-width: 24px;
+        display: flex;
+        justify-content: center;
+    }
+    .MuiTypography-root {
+        font-size: 14px;
+    }
+    .MuiList-root {
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+    .MuiButtonBase-root {
+        padding: 8px 14px;
+    }
+    .menuNav {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        border-radius: 4px;
+        transition: all .3s ease;
+        margin-bottom: 2px;
+        &:hover,
+        &.active {
+            background-color: rgba(251, 251, 251, 0.3);
+        }
+    }
+}

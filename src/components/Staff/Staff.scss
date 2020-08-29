@@ -1,0 +1,49 @@
+.staff {
+    &__title {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .staff__button {
+        height: 36px;
+        color: #2290E0;
+        border-radius: 8px;
+        border: 1px solid #2290E0;
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+    .staffBox {
+        background: #FFFFFF;
+        border-radius: 4px;
+        padding: 32px 22px 23px;
+        max-width: 185px;
+        min-width: 185px;
+        width: 100%;
+        min-height: 224px;
+        box-sizing: border-box;
+        transition: all .2s ease;
+        cursor: pointer;
+        box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.1);
+        &:hover {
+            transform: scale(1.07);
+        }
+        &__title {
+            color: #333333;
+            margin-bottom: 2px;
+            min-height: 38px;
+        }
+        &__position {
+            font-size: 12px;
+            font-weight: 600;
+            min-height: 34px;
+        }
+    }
+    .staffBox__avatar {
+        width: 90px;
+        height: 90px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 22px;
+        text-transform: uppercase;
+        font-size: 42px;
+    }
+}

@@ -1,0 +1,29 @@
+.plugModal {
+    color: #333333;
+    .MuiPaper-root {
+        max-width: 424px;
+        box-sizing: border-box;
+    }
+    .plugModal__content {
+        padding: 30px 50px;
+    }
+    .errorIcon {
+        font-size: 86px;
+        color: #7EC1F1;
+        margin: auto;
+        text-align: center;
+        display: block;
+        margin-bottom: 20px;
+    }
+    &__title {
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .plugModal__button {
+        margin: auto;
+        text-align: center;
+        display: block;
+    }
+}

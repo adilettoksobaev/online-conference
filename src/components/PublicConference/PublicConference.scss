@@ -1,0 +1,36 @@
+.publicConference {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(231.83deg, #03BEB5 0.44%, #08A7FF 59.97%, #678CFF 101.93%);
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    &__content {
+        max-width: 414px;
+        width: 100%;
+        background-color: #fff;
+        box-sizing: border-box;
+        border-radius: 16px;
+        padding: 16px 45px 24px;
+        color: #333333;
+    }
+    .title {
+        font-weight: 600;
+        font-size: 24px;
+        margin-bottom: 26px;
+    }
+    .conferenceTitle {
+        margin-bottom: 30px;
+    }
+    .MuiFormControl-root {
+        margin-bottom: 24px;
+    }
+}

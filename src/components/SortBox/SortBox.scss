@@ -1,0 +1,49 @@
+.sortBoxOption {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 14px;
+}
+.sortBoxOptionAdd {
+    color: #2290E0;
+    cursor: pointer;
+    font-weight: 400;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.passwordBox {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    .MuiTypography-root {
+        font-size: 14px;
+    }
+    .passwordBox__item {
+        margin-right: 34px;
+    }
+    .minWidth {
+        min-width: 118px;
+    }
+}
+
+.passwordRight {
+    min-width: 276px;
+    .MuiInput-root {
+        max-width: 89px;
+    }
+}
+
+.publicLink {
+    color: #2290E0;
+    text-decoration: underline;
+    cursor: pointer;
+    span {
+        padding-top: 10px;
+        padding-left: 10px;
+        float: right;
+    }
+    &:hover {
+        text-decoration: none;
+    }
+}

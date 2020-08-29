@@ -1,0 +1,63 @@
+stages:
+  - build
+  - deploy
+  - deploy-prod
+  - build-edu
+  - deploy-edu
+
+build site:
+  image: node:12
+  stage: build
+  script:
+    - npm install
+    - npm run build
+  artifacts:
+    expire_in: 1 week
+    paths:
+      - build
+
+build-edu:
+  only:
+    - master
+  image: node:12
+  stage: build-edu
+  script:
+    - ./patch.sh
+    - npm install
+    - npm run build
+  artifacts:
+    expire_in: 1 week
+    paths:
+      - build
+#unit test:
+#  image: node:6
+#  stage: test
+#  script:
+#    - npm install --progress=false
+#    - npm run unit
+
+deploy-prod:
+  only:
+    - master
+  image: alpine
+  stage: deploy-prod
+  script:
+    - apk add --no-cache openssh sshpass rsync
+    - export SSHPASS=$USER_PASS
+    - ls -l
+    - cd build/
+    - ls -l
+    - sshpass -e scp -P 22 -o stricthostkeychecking=no -r * root@srv1.vicon.kz:/var/www/bigbluebutton-default/
+
+deploy-edu:
+  only:
+    - master
+  image: alpine
+  stage: deploy-edu
+  script:
+    - apk add --no-cache openssh sshpass rsync
+    - export SSHPASS=$USER_PASS
+    - ls -l
+    - cd build/
+    - ls -l
+    - sshpass -e scp -P 22 -o stricthostkeychecking=no -r * root@srv1.vicon.kz:/var/www/edu_vicon/

@@ -1,0 +1,30 @@
+.addOrganizationModal {
+    color: #333333;
+    .MuiPaper-root {
+        max-width: 677px;
+        box-sizing: border-box;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        margin-bottom: 32px;
+    }
+    .deportamentTitle {
+        margin-bottom: 14px;
+    }
+    .addOrganizationModal__content {
+        padding: 40px 40px 20px;
+    }
+    .MuiFormControl-root {
+        margin-bottom: 22px;
+    }
+    .parentDeportament {
+        color: #757575;
+        font-size: 12px;
+        margin-bottom: 32px;
+        strong {
+            font-weight: 600;
+            margin-right: 10px;
+        }
+    }
+}

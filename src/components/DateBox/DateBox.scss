@@ -1,0 +1,30 @@
+.boxTime {
+    margin-top: -4px;
+    &__title {
+        font-size: 12px;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.54);
+    }
+    &__item {
+        display: flex;
+        align-items: flex-end;
+    }
+    input[type="time"]::-webkit-clear-button {
+        display: none;
+    }
+    .boxForm {
+        &:first-child {
+            &:after {
+                content: '-';
+                position: absolute;
+                font-weight: 700;
+                right: 6px;
+                top: 4px;
+                z-index: -1;
+            }
+        }
+    }
+}
+.MuiFormControl-root.repeatWidth {
+    min-width: 154px;
+}

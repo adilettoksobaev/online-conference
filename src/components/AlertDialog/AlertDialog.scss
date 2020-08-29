@@ -1,0 +1,41 @@
+.alertDialog {
+    color: #333333;
+    .MuiPaper-root {
+        padding: 22px 24px 30px;
+        max-width: 422px;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .alertDialog__close {
+        position: absolute;
+        right: 12px;
+        top: 12px;
+        .MuiSvgIcon-root {
+            font-size: 24px;
+            color: #333333;
+        }
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    &__question {
+        font-size: 12px;
+        color: #333333;
+        margin-bottom: 32px;
+    }
+    &__name {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    &__group {
+        .MuiButtonBase-root {
+            margin-left: 6px;
+            margin-right: 6px;
+        }
+    }
+}

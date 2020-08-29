@@ -1,0 +1,58 @@
+.profile {
+    padding: 20px;
+    padding-top: 15px;
+    padding-bottom: 64px;
+    .title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .profile__avatar {
+        width: 130px;
+        height: 130px;
+        margin: auto;
+        margin-bottom: 20px;
+        font-size: 55px;
+        text-transform: uppercase;
+    }
+    &__title {
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+    }
+    &__row {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        .MuiSvgIcon-root {
+            margin-left: 20px;
+            color: #2290E0;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    }
+    .staffModalLink {
+        text-transform: none;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .MuiFormLabel-root.Mui-disabled, .MuiInputBase-root.Mui-disabled {
+        color: #333333;
+    }
+    .MuiCheckbox-colorPrimary.Mui-disabled, .MuiFormControlLabel-label.Mui-disabled {
+        color: #777777;
+    }
+    .MuiInput-underline.Mui-disabled:before {
+        border-bottom-style: solid;
+    }
+    .addStaffModal__subTitle, .addStaffModal__h3 {
+        opacity: 1 !important;
+    }
+    label + .MuiInput-formControl {
+        margin-top: 22px;
+    }
+    .MuiInputBase-input {
+        padding-bottom: 10px;
+    }
+}

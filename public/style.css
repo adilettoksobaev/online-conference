@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "AristaProTrial"; 
+    src: url("../fonts/ARISTA-PRO-REGULAR-TRIAL_0.TTF") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(231.83deg, #03BEB5 0.44%, #08A7FF 59.97%, #678CFF 101.93%);
+}
+body::after {
+    content: '';
+    background-image: url('main.png');
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.vicon-form {
+    max-width: 427px;
+    width: 100%;
+    display: block;
+    box-shadow: 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 100px 80px rgba(0, 0, 0, 0.07);
+    border-radius: 16px;
+    padding: 32px 62px 36px;
+    z-index: 9;
+    box-sizing: border-box;
+}
+.vicon-form__text {
+    font-size: 15px;
+    line-height: 1;
+    margin-bottom: 14px;
+    font-family: 'AristaProTrial';
+}
+
+.vicon-form__input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    margin-bottom: 30px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    transition: all .3s ease;
+}
+.vicon-form__button {
+    border-radius: 8px;
+    max-width: 146px;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    margin: auto;
+    cursor: pointer;
+    color: #fff;
+}
+
+.light .vicon-form {
+    background: #ffffff;
+    color: #375A9C
+}
+.light .vicon-form__logo svg path {
+    fill: #375A9C
+}
+.light .vicon-form__input {
+    border-bottom: 2px solid #333333;
+    color: #333333;
+}
+.light .vicon-form__input::placeholder {
+    color: #A6A6A6;
+}
+.light .vicon-form__button {
+    background: #375A9C;
+}
+
+.dark .vicon-form {
+    background: #0C2A58;
+    color: #ffffff;
+}
+.dark .vicon-form__logo svg path {
+    fill: #ffffff
+}
+.dark .vicon-form__input {
+    border-bottom: 2px solid #ffffff;
+    color: #ffffff;
+}
+.dark .vicon-form__input::placeholder {
+    color: #ffffff;
+    opacity: 0.6;
+}
+.dark .vicon-form__button {
+    background: #07A6E7;
+}
+
+
+@media only screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    .vicon-form__logo svg {
+        max-width: 303px;
+        width: 100%;
+        height: 100%;
+    }
+    .vicon-form {
+        padding: 24px;
+    }
+    .vicon-form__text {
+        margin-bottom: 8px;
+    }
+    .vicon-form__input {
+        margin-bottom: 24px;
+    }
+}

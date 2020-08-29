@@ -1,0 +1,72 @@
+.staffModal {
+    color: #333333;
+    .MuiPaper-root {
+        max-width: 667px;
+        box-sizing: border-box;
+    }
+    .staffModal__content {
+        padding: 24px 40px 20px;
+    }
+    &__info {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 18px;
+    }
+    .staffModal__avatar {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 25px;
+        text-align: center;
+        margin-bottom: 22px;
+        text-transform: uppercase;
+        font-size: 42px;
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    &__row {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        .MuiSvgIcon-root {
+            margin-left: 20px;
+            color: #2290E0;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    }
+    &__form {
+        font-size: 16px;
+        font-weight: 700;
+        .MuiFormControl-root {
+            margin-bottom: 18px;
+        }
+        .MuiFormLabel-root {
+            font-weight: 700;
+            font-size: 16px;
+        }
+        .MuiInputBase-input {
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+    .staffModalLink {
+        color: #2290E0;
+        margin-bottom: 20px;
+        margin-left: -6px;
+        text-transform: none;
+    }
+    &__h3 {
+        font-weight: 600;
+        color: #2290E0;
+        margin-bottom: 16px;
+    }
+    .staffModal__btn {
+        border-color: #FF0000;
+        color: #FF0000;
+    }
+}

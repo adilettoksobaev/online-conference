@@ -1,0 +1,18 @@
+.addPositionModal {
+    color: #333333;
+    .MuiPaper-root {
+        max-width: 515px;
+        box-sizing: border-box;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 56px;
+    }
+    .addPositionModal__content {
+        padding: 40px 40px 20px;
+    }
+    .modalButtonGroup {
+        margin-top: 24px;
+    }
+}

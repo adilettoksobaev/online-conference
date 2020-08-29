@@ -1,0 +1,57 @@
+.untils {
+    font-size: 12px;
+    margin-right: 3rem;
+    &__title {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    .untils__add {
+        color: #2290E0;
+        margin-bottom: 2px;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .untils__positionLink {
+        text-decoration: underline;
+        cursor: pointer;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        li {
+            list-style: none;
+            margin-bottom: 5px;
+            a {
+                text-decoration: underline;
+                color: #201E3E;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    &__more {
+        cursor: pointer;
+        text-decoration: underline;
+        color: #2290E0;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .link {
+        text-decoration: underline;
+        cursor: pointer;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+.MuiSvgIcon-root.editPen {
+    cursor: pointer;
+    color: #2290E0;
+    margin-left: 5px;
+}

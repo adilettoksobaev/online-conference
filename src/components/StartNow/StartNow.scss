@@ -1,0 +1,63 @@
+.startNowModal {
+    color: #333333;
+    button.modalClose {
+        top: 5px;
+        right: 5px;
+    }
+    .MuiPaper-root {
+        max-width: 424px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .startNowModal__content {
+        padding: 22px 40px 30px;
+    }
+    .title {
+        margin-bottom: 29px;
+    }
+    .castleIcon {
+        text-align: center;
+        margin: auto;
+        margin-bottom: 18px;
+    }
+    .modalButtonGroup {
+        margin-top: 20px;
+        .MuiButton-contained {
+            padding-left: 26px;
+            padding-right: 26px;
+            &.Mui-disabled {
+                color: #333;
+            }
+        }
+    }
+    .passwordRow {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 26px;
+        .MuiTypography-root {
+            font-size: 14px;
+        }
+        .MuiFormControl-root {
+            max-width: 68px;
+        }
+    }
+    .link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #2290E0;
+        font-weight: 600;
+        cursor: pointer;
+        &:hover {
+            span {
+                text-decoration: none;
+            }
+        }
+        span {
+            text-decoration: underline;
+        }
+        .icon {
+            margin-right: 10px;
+        }
+    }
+}
